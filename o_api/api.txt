@@ -1,0 +1,10 @@
+API(Applicatioon Programming Interface)
+    개발자들이 미리 작성해놓은 틀(소스코드)
+
+    1. 내부 API
+        python 설치 시 다운로드 되었던 모듈
+        바로 사용할 수 있는 API
+
+    2. 외부 API
+        해당 기업에서 배포한 코드를 다운로드 받은 뒤 사용할 수 있는 모듈
+        기본으로 제공되지 않는 API

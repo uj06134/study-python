@@ -1,0 +1,44 @@
+매직 메소드
+    클래스 안에 재정의할 수 있는 스페셜 메소드이다.
+
+연산자     메소드                         설명
+───────────────────────────────────────────────────────
+ +      __add__(self, other)            덧셈
+ *      __mul__(self, other)            곱셈
+ -      __sub__(self, other)            뺄셈
+ /      __truediv__(self, other)        나눗셈
+ //     __floordiv__(self, other)       몫
+ %       __mod__(self, other)           나머지
+ **      __pow__(self, other[, modulo]) 제곱
+ >>      __lshift__(self, other)        우쉬프트
+ <<      __rshift__(self, other)        좌쉬프트
+ &       __and__(self, other)           논리곱
+ ^      __xor__(self, other)            배타논리합
+ |      __or__(self, other)             논리합
++=      __iadd__(self, other)           누적 더하기
+-=      __isub__(self, other)           누적 빼기
+*=      __imul__(self, other)           누적 곱하기
+/=      __idiv__(self, other)           누적 나누기
+//=     __ifloordiv__(self, other)      누적 몫
+%=      __imod__(self, other)           누적 나머지
+**=     __ipow__(self, other)           누적 제곱
+>>=     __irshift__(self, other)        누적 우쉬프트
+<<=     __ilshift__(self, other)        누적 좌쉬프트
+&=      __iand__(self, other)           누적 논리합
+^=      __ixor__(self, other)           누적 배타논리합
+|=      __ior__(self, other)            누적 논리합
+ <      __lt__(self, other)             작다(미만)
+ <=     __le__(self, other)             작거나 같다(이하)
+ ==     __eq__(self, other)             같다
+ !=     __ne__(self, other)             같지 않다
+ >      __gt__(self, other)             크다(초과)
+ >=     __ge__(self, other)             크거나 같다(이상)
+ [i]    __getitem__(self, index)        인덱스 연산자
+ in     __contains__(self, value)       멤버 확인
+ len    __len__(self)                   요소 길이
+ str    __str__(self)                   문자열 표현
+
+        __init__                       생성자
+        __del__                        소멸자
+        __new__                        할당자
+        __repr__(self)              __str__을 정의하지 않을 경우, __repr__이 대신 쓰인다, 객체를 표현(객체의 주소)하는 목적으로 사용한다
