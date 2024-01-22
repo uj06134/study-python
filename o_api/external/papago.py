@@ -2,7 +2,6 @@
 # https://openapi.naver.com/v1/papago/n2mt
 import urllib.request
 import json
-
 from o_api.external.ocr import response
 
 client_id = '2i_hR7gPkLy0qibmLYsG'
