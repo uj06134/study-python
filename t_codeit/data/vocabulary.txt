@@ -1,0 +1,6 @@
+cat: 고양이
+horse: 말
+dog: 개
+water: 물
+book: 책
+math: 수학
