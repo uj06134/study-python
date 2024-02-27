@@ -2,7 +2,7 @@
 # 사용자가 입력한 영어 단어가 정답이면 맞았습니다!라고 출력하고, 틀리면 아쉽습니다. 정답은 OOO입니다.가 출력되어야 합니다.
 # 문제를 내는 순서는 vocabulary.txt에 정리된 순서입니다.
 
-with open('data/vocabulary.txt', 'r', encoding='utf-8') as file_data:
+with open('vocabulary.txt', 'r', encoding='utf-8') as file_data:
     for line in file_data:
         # print(line)
         strip_data = line.strip()  # 문자열 공백 제거

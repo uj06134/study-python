@@ -3,7 +3,7 @@
 # 참고로 현재 제공된 파일에는 31일이 있지만, 어떤 달은 31일이 아닐 수도 있습니다. 이 점을 고려해서 확장성 있는 코드를 작성해 주시길 바랍니다.
 
 total_price = 0
-with open('data/chicken.txt', 'r', encoding='utf-8') as file_data:
+with open('chicken.txt', 'r', encoding='utf-8') as file_data:
     for line in file_data:
         strip_data = line.strip()  # 문자열 공백 제거
         split_data = strip_data.split("일: ")  # 문자열 나누기

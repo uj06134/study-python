@@ -4,14 +4,12 @@
 import random
 
 vocab = {}
-with open('data/vocabulary.txt', 'r', encoding='utf-8') as f:
+with open('vocabulary.txt', 'r', encoding='utf-8') as f:
     for line in f:
         data = line.strip().split(": ")
         english_word, korean_word = data[0], data[1]
         vocab[english_word] = korean_word
     keys = list(vocab.keys())
-    # print(vocab)
-    # print(len(keys))
 while True:
     index = random.randint(0, len(keys) - 1)
     english_word = keys[index]
@@ -24,11 +22,12 @@ while True:
     else:
         print(f"아쉽습니다. 정답은 {english_word}입니다")
 
-# 실행 결과
-# 말: horse
-# 맞았습니다!
-# 개: dog
-# 맞았습니다!
-# 물: water
-# 맞았습니다!
-# 말: q
+# # 실행 결과
+# # 말: horse
+# # 맞았습니다!
+# # 개: dog
+# # 맞았습니다!
+# # 물: water
+# # 맞았습니다!
+# # 말: q
+

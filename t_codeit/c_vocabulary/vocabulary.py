@@ -5,7 +5,7 @@
 # w: 쓰기 모드
 # a: 추가 모드(기존 내용을 유지한 채로 내용을 추가)
 while True:
-    with open('data/vocabulary.txt', 'a', encoding='utf-8') as file_data:
+    with open('vocabulary.txt', 'a', encoding='utf-8') as file_data:
         english_word = input('영어 단어를 입력하세요: ')
         if english_word == "q":
             break
