@@ -17,8 +17,7 @@ star_df = pd.DataFrame(star_list, columns=['name', 'birthday', 'occupation'])
 # 안에 있는 정보를 DataFrame으로 읽어 들이고, DataFrame을 출력해 주세요.
 
 import pandas as pd
-
-baby_names_df = pd.read_csv('data/popular_baby_names.csv')
+baby_names_df = pd.read_csv('../data/popular_baby_names.csv')
 # 테스트 코드
 # print(baby_names_df)
 
@@ -27,8 +26,37 @@ baby_names_df = pd.read_csv('data/popular_baby_names.csv')
 # 날짜(Draw Date)가 이 DataFrame의 인덱스가 되도록 해 주세요!
 
 import pandas as pd
-
-lotto_df = pd.read_csv('data/mega_millions.csv', index_col=0)
-
+lotto_df = pd.read_csv('../data/mega_millions.csv', index_col=0)
 # 테스트 코드
 # print(lotto_df)
+
+# 문제 4
+# 1) ID 1의 무게를 200으로 변경하세요.
+# 2) ID 21의 row를 삭제하세요.
+# 3) ID 20의 row를 추가하세요. ID 20의 키는 70, 무게는 200입니다.
+
+import pandas as pd
+body_df = pd.read_csv('../data/body_imperial1.csv', index_col=0)
+# 1)
+body_df.loc[1, 'Weight (Pound)'] = 200
+# 2)
+body_df.drop(21, axis = 'index', inplace = True)
+# 3)
+body_df.loc[20] = [70, 200]
+# 테스트 코드
+# print(body_df)
+
+# 문제 5
+# 1) '비만도' column을 추가하고, 모든 ID에 대해 '정상'으로 설정해주세요.
+# 2) 'Gender' column의 값을 ID 0~10까지는 'Male' 11~20까지는 'Female'로 변경하세요.
+
+import pandas as pd
+body_df2 = pd.read_csv('../data/body_imperial2.csv', index_col=0)
+# 1)
+body_df2['비만도'] = '정상'
+# 2)
+body_df2.loc[0:10, 'Gender'] = 'Male'
+body_df2.loc[11:20, 'Gender'] = 'Female'
+
+# 테스트 코드
+print(body_df2)

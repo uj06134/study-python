@@ -1,6 +1,6 @@
 # 방송사 시청률 받아오기
 import pandas as pd
-df = pd.read_csv('data/broadcast.csv', index_col=0)
+df = pd.read_csv('../data/broadcast.csv', index_col=0)
 
 # loc와 iloc의 차이
 # loc: 데이터 프레임의 행 또는 컬럼의 label이나 boolean array로 인덱싱하는 방법

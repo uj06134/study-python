@@ -3,8 +3,8 @@
 
 import pandas as pd
 
-samsong_df = pd.read_csv('data/samsong.csv')
-hyundee_df = pd.read_csv('data/hyundee.csv')
+samsong_df = pd.read_csv('../data/samsong.csv')
+hyundee_df = pd.read_csv('../data/hyundee.csv')
 
 # 여기에 코드를 작성하세요
 result_samsong_df = samsong_df.loc[:, ['요일', '문화생활비']]
